@@ -10,7 +10,12 @@ export default {
 		"2xl": "1536px",
 	  },
 	  colors: {
-		primary: "#B9FF66",
+		// primary: "#B9FF66",
+		primary: "#E63946",
+		accent: "#F4A261",
+		neutralbase: "#264653",
+		secondary: "#2A9D8F",
+		background: "#EDEDED",
 		black: "#000000",
 		white: "#FFFFFF",
 		gray: "#0D0C22",
