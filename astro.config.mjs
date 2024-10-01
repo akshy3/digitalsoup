@@ -9,6 +9,6 @@ export default defineConfig({
   integrations: [tailwind()],
   output: 'static',
   site: 'https://akshy3.github.io',
-  base: 'digitalsoup',
+  base: '/digitalsoup',
   // adapter: vercel(),
 });
