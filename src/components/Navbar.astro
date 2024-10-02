@@ -3,10 +3,10 @@ import Container from "./Container.astro"
 import { Astronav, MenuItems, MenuIcon } from "astro-navbar";
 
 const menuitems = [
-  { href: 'about', label: 'About us' },
-  { href: '#services', label: 'Services' },
-  { href: '#projects', label: 'Use Cases' },
-  { href: 'pricing', label: 'Pricing' },
+  { href: '/about', label: 'About us' },
+  { href: '/#services', label: 'Services' },
+  { href: '/#projects', label: 'Use Cases' },
+  { href: '/pricing', label: 'Pricing' },
   // { href: '/articles', label: 'Blog'},
 ];
 
@@ -19,7 +19,7 @@ const navButton = { href: '#', label: 'Request a quote' };
   <header class="flex flex-col lg:flex-row justify-between items-center my-5">
     <Astronav>
       <div class="flex w-full lg:w-auto items-center justify-between">
-        <a href="/" class="flex items-center space-x-3 rtl:space-x-reverse">
+        <a href="/digitalsoup/" class="flex items-center space-x-3 rtl:space-x-reverse">
           <!-- <img src="/Logo.svg" class="h-8" alt="Logo" /> -->
            <h1 class="text-3xl font-bold">Digital<span class="text-primary">Soup</span></h1>
         </a>
