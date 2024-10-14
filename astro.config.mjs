@@ -8,7 +8,6 @@ import vercel from '@astrojs/vercel/serverless';
 export default defineConfig({
   integrations: [tailwind()],
   output: 'static',
-  site: 'https://akshy3.github.io',
-  base: '/digitalsoup',
+  site: 'https://digitalsoup.in',
   // adapter: vercel(),
 });
