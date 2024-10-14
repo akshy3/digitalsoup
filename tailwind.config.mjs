@@ -11,7 +11,8 @@ export default {
 	  },
 	  colors: {
 		// primary: "#B9FF66",
-		primary: "#E63946",
+		// primary: "#E63946", //spicy red
+		primary: "#780606", //bloody red
 		accent: "#F4A261",
 		neutralbase: "#264653",
 		secondary: "#2A9D8F",
