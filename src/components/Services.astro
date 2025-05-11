@@ -15,13 +15,13 @@ import servicesData from './Data/services.json';
         {
         servicesData.map(({ background, name1, name2, arrow, link, image} ) => (
         <div class={background}>
-            <div class="flex-col justify-center items-start gap-[93px] inline-flex">
+            <div class="flex-col justify-center items-start gap-[30px] inline-flex">
                 <div class="flex-col justify-start items-start flex">
-                    <div class="px-[7px] bg-lime-300 rounded-[7px] flex-col justify-start items-start gap-2.5 flex">
-                        <div class=" text-3xl font-medium">{name1}</div>
+                    <div class="px-[3px] bg-lime-300 rounded-[3px] flex-col justify-start items-start gap-1 flex">
+                        <div class=" text-2xl font-medium">{name1}</div>
                     </div>
-                    <div class="px-[7px] bg-lime-300 rounded-[7px] flex-col justify-start items-start gap-2.5 flex">
-                        <div class="text-3xl font-medium">{name2}</div>
+                    <div class="px-[3px] bg-lime-300 rounded-[3px] flex-col justify-start items-start gap-1 flex">
+                        <div class="text-2xl font-medium">{name2}</div>
                     </div>
                 </div>
                 {/* <a class="justify-start items-center gap-[15px] inline-flex" href={link}>
