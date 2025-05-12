@@ -1,8 +1,8 @@
 ---
 import "../styles/global.css";
-import Navbar from '../components/Navbar.astro';
-import Footer from '../components/Footer.astro';
-import { ViewTransitions } from 'astro:transitions';
+import Navbar from "../components/Navbar.astro";
+import Footer from "../components/Footer.astro";
+import { ViewTransitions } from "astro:transitions";
 ---
 
 <!doctype html>
@@ -11,19 +11,26 @@ import { ViewTransitions } from 'astro:transitions';
     <meta charset="UTF-8" />
     <meta name="description" content="Astro description" />
     <meta name="viewport" content="width=device-width" />
-    <link rel="icon" type="image/svg+xml" href="/digitalsoup/favicon.svg" />
+    <!-- <link rel="icon" type="image/svg+xml" href="/digitalsoup/favicon.svg" /> -->
+    <link rel="apple-touch-icon" sizes="180x180" href="/favicon/apple-touch-icon.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon/favicon-16x16.png" />
+    <link rel="manifest" href="/favicon/site.webmanifest" />
     <meta name="generator" content={Astro.generator} />
     <title>DigitalSoup</title>
     <meta
       name="description"
       content="At Digitalsoup, we help businesses grow by crafting custom digital marketing strategies that connect brands with their audience."
     />
-	<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300..700&display=swap" rel="stylesheet">
-  <ViewTransitions />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300..700&display=swap"
+      rel="stylesheet"
+    />
+    <ViewTransitions />
   </head>
   <body class="bg-white font-SpaceGrotesk">
     <Navbar />
     <slot />
-    <Footer/>
+    <Footer />
   </body>
 </html>
