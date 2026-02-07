@@ -1,0 +1,44 @@
+---
+import Container from "./Container.astro";
+import Topic from "./Topic.astro";
+
+const faqs = [
+  {
+    q: "How quickly can we start?",
+    a: "Most projects start within 5 business days after kickoff and alignment on goals, channels, and access.",
+  },
+  {
+    q: "Do you work on one-off tasks?",
+    a: "We focus on ongoing growth systems. We can do short audits, but implementation retainers deliver better outcomes.",
+  },
+  {
+    q: "What does reporting look like?",
+    a: "You get weekly updates, a live dashboard, and monthly strategic review calls tied to revenue goals.",
+  },
+  {
+    q: "Who will work on our account?",
+    a: "A focused pod across strategy, media, creative, and analytics. You work directly with decision-makers.",
+  },
+];
+---
+
+<section id="faq" class="pt-8 md:pt-12">
+  <Container>
+    <div class="section-shell p-5 sm:p-7 md:p-10">
+      <Topic
+        title="Frequently Asked Questions"
+        description="Clear answers before we work together."
+      />
+
+      <div class="grid grid-cols-1 gap-3 md:grid-cols-2">
+        {faqs.map((item) => (
+          <article class="rounded-2xl border border-[#1f2d4a24] bg-white/80 p-5">
+            <h3 class="text-base font-bold text-[#0f1b33]">{item.q}</h3>
+            <p class="mt-2 text-sm leading-relaxed text-[#4a5b80]">{item.a}</p>
+          </article>
+        ))}
+      </div>
+    </div>
+  </Container>
+</section>
+

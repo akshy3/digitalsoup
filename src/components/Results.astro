@@ -1,0 +1,44 @@
+---
+import Container from "./Container.astro";
+import Topic from "./Topic.astro";
+
+const wins = [
+  {
+    metric: "+212%",
+    label: "Qualified organic traffic",
+    detail: "For a B2B SaaS brand after repositioning content and technical SEO foundations.",
+  },
+  {
+    metric: "3.4x",
+    label: "Paid social ROAS",
+    detail: "For a D2C brand through creative testing and audience segmentation sprints.",
+  },
+  {
+    metric: "-37%",
+    label: "Cost per lead",
+    detail: "For a local service business by rebuilding ad structure and landing page flow.",
+  },
+];
+---
+
+<section id="results" class="pt-8 md:pt-12">
+  <Container>
+    <div class="section-shell p-5 sm:p-7 md:p-10">
+      <Topic
+        title="Recent Outcomes"
+        description="Representative examples of the kind of performance improvements we target."
+      />
+
+      <div class="grid grid-cols-1 gap-3 md:grid-cols-3">
+        {wins.map((win) => (
+          <article class="rounded-2xl border border-[#1f2d4a24] bg-white/85 p-5">
+            <p class="text-3xl font-extrabold text-[#ff6b2c]">{win.metric}</p>
+            <h3 class="mt-2 text-lg font-bold text-[#111c34]">{win.label}</h3>
+            <p class="mt-2 text-sm leading-relaxed text-[#4b5c82]">{win.detail}</p>
+          </article>
+        ))}
+      </div>
+    </div>
+  </Container>
+</section>
+

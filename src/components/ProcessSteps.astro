@@ -1,0 +1,45 @@
+---
+import Container from "./Container.astro";
+import Topic from "./Topic.astro";
+
+const steps = [
+  {
+    title: "Discovery and Audit",
+    text: "We review your funnel, traffic channels, messaging, and conversion leaks to identify the highest ROI opportunities first.",
+  },
+  {
+    title: "90-Day Growth Plan",
+    text: "You get a practical roadmap with channel priorities, content angles, budget allocation, and weekly execution milestones.",
+  },
+  {
+    title: "Execution Sprints",
+    text: "Our team launches and iterates campaigns fast with tight feedback loops between paid media, creative, SEO, and landing pages.",
+  },
+  {
+    title: "Reporting and Scale",
+    text: "Clear dashboards and weekly insights show what is working, what to cut, and where to scale for sustained growth.",
+  },
+];
+---
+
+<section id="process" class="pt-8 md:pt-12">
+  <Container>
+    <div class="section-shell p-5 sm:p-7 md:p-10">
+      <Topic
+        title="How We Work"
+        description="A simple, transparent process designed to move from uncertainty to repeatable growth."
+      />
+
+      <div class="grid grid-cols-1 gap-3 md:grid-cols-2">
+        {steps.map((step, idx) => (
+          <article class="rounded-2xl border border-[#1f2d4a24] bg-white/80 p-5">
+            <p class="text-xs font-semibold uppercase tracking-[0.08em] text-[#5f6f93]">Step {String(idx + 1).padStart(2, "0")}</p>
+            <h3 class="mt-2 text-xl font-bold text-[#0b1220]">{step.title}</h3>
+            <p class="mt-2 text-sm leading-relaxed text-[#44557b]">{step.text}</p>
+          </article>
+        ))}
+      </div>
+    </div>
+  </Container>
+</section>
+
