@@ -1,58 +1,53 @@
 ---
-import Container from "./Container.astro"
+import Container from "./Container.astro";
 ---
-<Container>
 
-<!-- <div class="relative flex flex-col-reverse items-center md:flex-row" id="hero">
-    <div class="row items-center py-5 md:w-6/12 md:pb-20 md:pt-10">
-        <div class="text-left space-y-3">
-            <h1 class="text-5xl font-medium leading-none md:text-6xl text-center md:text-left">Navigating the <br> digital landscape <br> for success</h1>
-            <p class="mt-6 mb-8  text-xl font-normal leading-7 sm:mb-12 text-center md:text-left">Our digital marketing agency helps businesses grow and succeed online through a range of services including SEO, PPC, social media marketing, and content creation.</p>
-            <div class="w-full justify-center md:justify-start items-center inline-flex">
-                <a href="#" target="_blank" class="px-8 py-5 bg-zinc-900 hover:bg-white rounded-2xl text-center text-white hover:text-black border text-xl font-normal leading-7">Book a consultation
-                </a>
+<section class="pt-36 md:pt-40">
+  <Container>
+    <div class="section-shell overflow-hidden p-8 md:p-12">
+      <div class="grid items-center gap-10 lg:grid-cols-[1.1fr_0.9fr]">
+        <div class="space-y-7">
+          <p class="section-kicker fade-up">Digital Growth, Engineered</p>
+          <h1 class="fade-up fade-delay-1 text-4xl font-extrabold leading-tight text-[#0b1220] md:text-6xl">
+            Your brand deserves more than generic marketing.
+          </h1>
+          <p class="fade-up fade-delay-2 max-w-xl text-lg leading-relaxed text-[#33415f]">
+            We blend strategy, design, and performance media to turn noisy campaigns into predictable revenue systems.
+          </p>
+          <div class="fade-up fade-delay-2 flex flex-wrap gap-3">
+            <a href="/contact" class="btn-primary">Start your growth sprint</a>
+            <a href="#services" class="btn-secondary">Explore services</a>
+          </div>
+          <div class="grid max-w-xl grid-cols-3 gap-3 pt-2">
+            <div class="rounded-2xl border border-[#1f2d4a26] bg-white/70 p-3">
+              <p class="text-2xl font-bold text-[#111c34]">3.8x</p>
+              <p class="text-xs text-[#556487]">Avg. ROAS increase</p>
             </div>
+            <div class="rounded-2xl border border-[#1f2d4a26] bg-white/70 p-3">
+              <p class="text-2xl font-bold text-[#111c34]">90d</p>
+              <p class="text-xs text-[#556487]">Time to momentum</p>
+            </div>
+            <div class="rounded-2xl border border-[#1f2d4a26] bg-white/70 p-3">
+              <p class="text-2xl font-bold text-[#111c34]">50+</p>
+              <p class="text-xs text-[#556487]">Brands accelerated</p>
+            </div>
+          </div>
         </div>
-    </div>
-    <div class="flex items-center py-5 md:w-6/12 md:pb-20 md:pt-10">
-        <img src="/Hero.svg" width="100%" alt="Hero"/>
-    </div>
-</div> -->
-<div class="relative flex flex-col-reverse items-center md:flex-row" id="hero">
-    <div class="row items-center py-5 md:pb-20 md:pt-10">
-        <div class="text-center space-y-10">
-          <img src="/logo.png" class="h-52 m-auto" alt="Logo" />
 
-            <h2 class="mt-10 text-5xl font-medium leading-none md:text-6xl">Ready to stir up your digital presence?</h2>
-            <p class="mt-6 mb-8  text-xl font-normal leading-7 sm:mb-12">At Digitalsoup, we mix creativity, strategy, and AI magic to help your business grow. Whether you’re a startup or a big player, we’ve got the right recipe to cook up success.</p>
-            
-            <a class="px-9 py-5 bg-primary hover:bg-barnRed text-white hover:text-white border rounded-2xl justify-items-center md:justify-items-start gap-2.5 inline-flex" rel="noopener noreferrer"  href="/contact" target="_blank">
-                <h2 class="text-center text-xl font-normal leading-7"> Let’s cook!</h2>
-            </a>
+        <div class="relative">
+          <div class="absolute -left-8 -top-8 h-28 w-28 rounded-full bg-[#48d8b14f] blur-2xl"></div>
+          <div class="absolute -bottom-8 -right-8 h-28 w-28 rounded-full bg-[#ff6b2c4d] blur-2xl"></div>
+          <div class="relative rounded-3xl border border-[#1f2d4a2e] bg-[#0f1b33] p-8 text-white shadow-2xl">
+            <img src="/logo.png" class="mx-auto h-24 w-auto" alt="DigitalSoup logo" />
+            <p class="mt-6 text-center text-lg font-semibold">A creative growth partner for ambitious businesses</p>
+            <div class="mt-6 space-y-3 text-sm text-[#d6def5]">
+              <p class="rounded-xl bg-white/10 px-4 py-3">Paid media + creative testing loops</p>
+              <p class="rounded-xl bg-white/10 px-4 py-3">SEO + content systems built for conversion</p>
+              <p class="rounded-xl bg-white/10 px-4 py-3">Weekly reporting focused on business outcomes</p>
+            </div>
+          </div>
         </div>
+      </div>
     </div>
-</div>
-
-<!-- <div class="flex-row items-center">
-    <div class="grid grid-cols-3 sm:grid-cols-3 md:grid-cols-6">
-        <div class="p-4 grayscale transition duration-200 hover:grayscale-0">
-            <img src="/clients/01.svg" class="h-12 w-auto mx-auto" loading="lazy" alt="client logo" width="" height="" />
-        </div>
-        <div class="p-4 grayscale transition duration-200 hover:grayscale-0">
-            <img src="/clients/02.svg" class="h-12 w-auto mx-auto" loading="lazy" alt="client logo" width="" height="" />
-        </div>
-        <div class="p-4 flex grayscale transition duration-200 hover:grayscale-0">
-            <img src="/clients/03.svg" class="h-9 w-auto m-auto" loading="lazy" alt="client logo" width="" height="" />
-        </div>
-        <div class="p-4 grayscale transition duration-200 hover:grayscale-0">
-            <img src="/clients/04.svg" class="h-12 w-auto mx-auto" loading="lazy" alt="client logo" width="" height="" />
-        </div>
-        <div class="p-4 flex grayscale transition duration-200 hover:grayscale-0">
-            <img src="/clients/05.svg" class="h-8 w-auto m-auto" loading="lazy" alt="client logo" width="" height="" />
-        </div>
-        <div class="p-4 grayscale transition duration-200 hover:grayscale-0">
-            <img src="/clients/06.svg" class="h-12 w-auto mx-auto" loading="lazy" alt="client logo" width="" height="" />
-        </div>
-    </div>
-</div> -->
-</Container>
+  </Container>
+</section>

@@ -1,49 +1,32 @@
 ---
-import Container from "../components/Container.astro"
-import Layout from '../layouts/Layout.astro';
-import Team from "../components/Team.astro";
+import Container from "../components/Container.astro";
+import Layout from "../layouts/Layout.astro";
 ---
 
-<Layout title="Welcome to My site">
-    
-	<main class="space-y-20">
-		<Container>
-            <section id="about" class="bg-gradient-to-b from-gray-50 to-gray-100 py-20">
-                <div class="max-w-4xl mx-auto px-6">
-                  <!-- Section Header -->
-                  <div class="text-center mb-12">
-                    <h2 class="text-5xl font-extrabold text-gray-900 mb-4 relative inline-block">
-                      <span>About DigitalSoup</span>
-                      <span class="absolute bottom-0 left-1/2 transform -translate-x-1/2 w-24 h-1 bg-orange-500 rounded"></span>
-                    </h2>
-                    <p class="text-lg text-gray-600 max-w-2xl mx-auto">Stirring together creativity, data, and technology for measurable growth.</p>
-                  </div>
-              
-                  <!-- Content -->
-                  <div class="space-y-8 text-gray-700 leading-relaxed">
-                    <p>
-                      DigitalSoup is more than just a digital marketing agency—it’s where data-driven insights meet innovative ideas. We discard one-size-fits-all templates in favor of bespoke strategies across SEO, PPC, social media, and content marketing that directly impact your bottom line.
-                    </p>
-                    <p>
-                      Transparency is at our core: from in-depth market research to real-time reporting dashboards, you’ll see every ingredient of your campaign and understand exactly how we optimize for performance.
-                    </p>
-                    <p>
-                      The name <strong>DigitalSoup</strong> embodies our philosophy: blend the finest insights, creativity, and execution to serve up results that simmer and scale. Whether you need a complete brand overhaul or a targeted conversion boost, consider us your first scoop of digital strategy.
-                    </p>
-                  </div>
-              
-                  <!-- Call to Action -->
-                  <div class="mt-12 text-center">
-                    <a href="#contact" class="inline-flex items-center bg-orange-500 hover:bg-orange-600 text-white font-semibold py-4 px-10 rounded-full shadow-lg transition-transform transform hover:-translate-y-1">
-                      Get in Touch
-                      <svg class="w-5 h-5 ml-2" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                        <path stroke-linecap="round" stroke-linejoin="round" d="M17 8l4 4m0 0l-4 4m4-4H3"></path>
-                      </svg>
-                    </a>
-                  </div>
-                </div>
-              </section>
-              
-            
-	</main>
+<Layout title="About DigitalSoup">
+  <main class="pb-10 pt-36 md:pt-40">
+    <Container>
+      <section class="section-shell p-8 md:p-12">
+        <p class="section-kicker">About us</p>
+        <h1 class="mt-4 text-4xl font-bold text-[#0b1220] md:text-5xl">We build growth engines, not random campaigns.</h1>
+        <div class="mt-6 grid gap-5 text-[#3b4d75] md:grid-cols-2">
+          <p>
+            DigitalSoup combines strategic planning, creative execution, and data analysis into one operating rhythm. We focus on channels that can scale and on messaging that actually moves people to act.
+          </p>
+          <p>
+            Our clients work with us because we keep things clear: priorities, numbers, and accountability. Each initiative is tied to pipeline, revenue, or retention.
+          </p>
+          <p>
+            We are intentionally cross-functional. Paid media, SEO, design, and analytics collaborate from day one so your brand experience stays consistent across touchpoints.
+          </p>
+          <p>
+            Whether you are launching a new offer or fixing an underperforming funnel, we help you move faster with fewer assumptions and better decisions.
+          </p>
+        </div>
+        <div class="mt-8">
+          <a href="/contact" class="btn-primary">Let us plan your next 90 days</a>
+        </div>
+      </section>
+    </Container>
+  </main>
 </Layout>

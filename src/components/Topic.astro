@@ -1,12 +1,9 @@
 ---
-const { title, description} = Astro.props;
+const { title, description } = Astro.props;
 ---
 
-<div class="grid place-items-center gap-5 mb-10 md:flex">
-    <h2 class="text-3xl sm:text-4xl p-2 font-medium bg-primary rounded-md text-white">
-        {title}
-    </h2>
-    <p class="text-xl font-normal text-center md:text-start lg:w-2/3">
-        {description}
-    </p>
+<div class="mb-8 flex flex-col gap-4 text-center md:mb-10 md:text-left">
+  <p class="section-kicker mx-auto md:mx-0">What we do</p>
+  <h2 class="text-3xl font-bold text-[#0b1220] md:text-4xl">{title}</h2>
+  <p class="mx-auto max-w-2xl text-base leading-relaxed text-[#3d4d72] md:mx-0 md:text-lg">{description}</p>
 </div>

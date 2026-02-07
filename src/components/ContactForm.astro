@@ -1,45 +1,44 @@
 ---
-import Container from "./Container.astro"
 import Topic from "./Topic.astro";
 ---
-<!-- <Container> -->
-<div class="relative flex flex-col items-center md:flex-row">
-    <Topic title="Contact" description="Connect with Us: Let's Discuss Your Digital Marketing Needs" />
-</div>
 
-<div class="relative flex flex-col items-center md:flex-row my-6 md:bg-zinc-100 rounded-[45px]">
-    <div class="row items-center py-12 px-4 md:px-20 md:w-8/12 md:py-10 w-full">
-        <form action="https://formspree.io/f/xyzwdgpz" method="POST" class="space-y-8 w-full">
-            <div class="flex">
-                <div class="flex items-center me-4">
-                    <input id="inline-radio" type="radio" value="" name="inline-radio-group" class="w-4 h-4 text-lime bg-black border-black focus:ring-lime">
-                    <label for="inline-radio" class="ms-2 text-base font-medium text-black">Say Hi</label>
-                </div>
-                <div class="flex items-center me-4 mx-8 md:mx-20">
-                    <input id="inline-2-radio" type="radio" value="" name="inline-radio-group" class="w-4 h-4 text-lime bg-black border-black focus:ring-lime">
-                    <label for="inline-2-radio" class="ms-2 text-base font-medium text-black">Get a Quote</label>
-                </div>
-            </div>
-            <div>
-                <label for="email" class="block mb-2 text-base font-medium text-black">Email</label>
-                <input name="email" type="email" id="email" class="shadow-sm bg-white border text-black text-base rounded-lg focus:ring-black focus:border-black block w-full p-2.5" placeholder="Name" required>
-            </div>
-            <div>
-                <label for="subject" class="block mb-2 text-base font-medium text-black">Subject</label>
-                <input name="subject" type="text" id="subject" class="block p-3 w-full text-base text-black bg-white rounded-lg border shadow-sm focus:ring-black focus:border-black" placeholder="Email" required>
-            </div>
-            <div class="sm:col-span-2">
-                <label for="message" class="block mb-2 text-base font-medium text-black dark:text-gray-400">Message</label>
-                <textarea name="message" id="message" rows="6" class="block p-2.5 w-full text-base text-black bg-white rounded-lg shadow-sm border focus:ring-black focus:border-black" placeholder="Message"></textarea>
-            </div>
-            <button type="submit" class="w-full py-5 bg-zinc-900 rounded-[14px] justify-center gap-2.5 inline-flex">
-                <div class="text-center text-white text-xl font-normal leading-7">Send Message</div>
-            </button>
-        </form>
-    </div>
-    <!-- <div class="hidden md:grid md:justify-items-end md:w-4/12 md:py-2">
-        <img src="/clients/contact.svg" alt="c" width="80%">
-    </div> -->
-</div>
+<section class="section-shell p-8 md:p-10">
+  <Topic title="Contact" description="Tell us your growth goals and we will come back with a clear plan, channel mix, and expected milestones." />
 
-<!-- </Container> -->
+  <div class="mt-6 grid gap-6 md:grid-cols-[1.1fr_0.9fr]">
+    <form action="https://formspree.io/f/xyzwdgpz" method="POST" class="space-y-4 rounded-2xl border border-[#1f2d4a24] bg-white/80 p-6">
+      <div class="grid gap-4 md:grid-cols-2">
+        <div>
+          <label for="name" class="mb-1 block text-sm font-semibold text-[#24355a]">Name</label>
+          <input name="name" type="text" id="name" class="w-full rounded-xl border border-[#1f2d4a2b] bg-white px-4 py-3 text-sm focus:border-[#ff6b2c] focus:outline-none" placeholder="Your name" required />
+        </div>
+        <div>
+          <label for="email" class="mb-1 block text-sm font-semibold text-[#24355a]">Email</label>
+          <input name="email" type="email" id="email" class="w-full rounded-xl border border-[#1f2d4a2b] bg-white px-4 py-3 text-sm focus:border-[#ff6b2c] focus:outline-none" placeholder="you@company.com" required />
+        </div>
+      </div>
+      <div>
+        <label for="subject" class="mb-1 block text-sm font-semibold text-[#24355a]">Subject</label>
+        <input name="subject" type="text" id="subject" class="w-full rounded-xl border border-[#1f2d4a2b] bg-white px-4 py-3 text-sm focus:border-[#ff6b2c] focus:outline-none" placeholder="What do you need help with?" required />
+      </div>
+      <div>
+        <label for="message" class="mb-1 block text-sm font-semibold text-[#24355a]">Message</label>
+        <textarea name="message" id="message" rows="6" class="w-full rounded-xl border border-[#1f2d4a2b] bg-white px-4 py-3 text-sm focus:border-[#ff6b2c] focus:outline-none" placeholder="Share your goals, budget, and timeline."></textarea>
+      </div>
+      <button type="submit" class="btn-primary w-full">Send message</button>
+    </form>
+
+    <aside class="rounded-2xl border border-[#1f2d4a24] bg-[#0f1b33] p-6 text-white">
+      <p class="section-kicker bg-white/20 text-white">What happens next</p>
+      <ol class="mt-4 space-y-3 text-sm text-[#d6def5]">
+        <li>1. We review your brief and goals.</li>
+        <li>2. We schedule a strategy call within 24-48 hours.</li>
+        <li>3. You get a tailored growth roadmap.</li>
+      </ol>
+      <div class="mt-6 rounded-xl bg-white/10 p-4 text-sm">
+        <p class="font-semibold">Prefer direct email?</p>
+        <a href="mailto:reach.digitalsoup@gmail.com" class="mt-1 inline-block text-[#48d8b1]">reach.digitalsoup@gmail.com</a>
+      </div>
+    </aside>
+  </div>
+</section>

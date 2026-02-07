@@ -1,60 +1,41 @@
 ---
-import Container from "./Container.astro"
+import Container from "./Container.astro";
 import Topic from "./Topic.astro";
-import servicesData from './Data/services.json';
+import servicesData from "./Data/services.json";
 ---
-<Container>
-<div class="relative flex flex-col items-center md:flex-row" id="services">
-    <Topic title="Our Services" description="Our digital marketing agency helps businesses grow and succeed online through a range of services including SEO, PPC, social media marketing, and content creation">
-</div>
 
-<div class="flex-row items-center py-5">
-    <div class="grid grid-cols-1 sm:grid-cols-1 md:grid-cols-2 gap-4">
+<section id="services" class="pt-8 md:pt-12">
+  <Container>
+    <div class="section-shell p-8 md:p-10">
+      <Topic
+        title="Services Built for Compounding Growth"
+        description="Every engagement is assembled like a high-performance system: clear strategy, fast execution, and measurable outcomes across channels."
+      />
 
-        <!-- card start-->
-        {
-        servicesData.map(({ background, name1, name2, arrow, link, image} ) => (
-        <div class={background}>
-            <div class="flex-col justify-center items-start gap-[30px] inline-flex">
-                <div class="flex-col justify-start items-start flex">
-                    <div class="px-[3px] bg-lime-300 rounded-[3px] flex-col justify-start items-start gap-1 flex">
-                        <div class=" text-2xl font-medium">{name1}</div>
-                    </div>
-                    <div class="px-[3px] bg-lime-300 rounded-[3px] flex-col justify-start items-start gap-1 flex">
-                        <div class="text-2xl font-medium">{name2}</div>
-                    </div>
-                </div>
-                {/* <a class="justify-start items-center gap-[15px] inline-flex" href={link}>
-                    <div class="w-[41px] h-[41px] relative">
-                        <img class="w-[41px] h-[41px] left-0 top-0 absolute" src={arrow} />
-                    </div>
-                    <div class="text-xl font-normal leading-7">Learn more</div>
-                </a> */}
+      <div class="grid grid-cols-1 gap-4 md:grid-cols-2">
+        {servicesData.map(({ name1, name2, image }) => (
+          <article class="group rounded-2xl border border-[#1f2d4a24] bg-white/80 p-6 transition hover:-translate-y-1 hover:border-[#1f2d4a4a]">
+            <div class="flex items-start justify-between gap-3">
+              <h3 class="text-2xl font-semibold text-[#111c34]">{name1} <span class="text-[#ff6b2c]">{name2}</span></h3>
+              <img class="h-12 w-12 rounded-xl border border-[#1f2d4a1f] bg-[#f4f7ff] p-2" src={image} alt={name1} />
             </div>
-            {/* <div class="w-[210px] h-[170px] pt-0.5 pb-[1.95px] justify-center items-center flex">
-                <img class="hidden md:block" src={image} />
-            </div> */}
-        </div>
-        ))
-        }
-        <!-- card end-->
-    </div>
-</div>
+            <p class="mt-4 text-sm leading-relaxed text-[#485a82]">
+              We design this channel to deliver steady growth with transparent reporting, fast optimization cycles, and creative that converts.
+            </p>
+          </article>
+        ))}
+      </div>
 
-<div class="flex-row items-center my-6 p-14 bg-zinc-100 rounded-[45px]">
-    <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
-        <div class="justify-start items-center gap-[275px] flex">
-            <div class="flex-col justify-start items-start gap-[26px] inline-flex text-black">
-                <div class="text-3xl font-medium">Let’s make things happen</div>
-                <div class="text-lg font-normal">Contact us today to learn more about how our digital marketing services can help your business grow and succeed online.</div>
-                <a href="/contact" class="px-[35px] py-5 bg-zinc-900 hover:bg-white text-white hover:text-black border rounded-[14px] justify-start items-start gap-2.5 inline-flex">
-                    <div class="text-center text-xl font-normal leading-7">Get your free proposal</div>
-                </a>
-            </div>
+      <div class="mt-8 rounded-2xl border border-[#1f2d4a26] bg-[#0f1b33] p-7 text-white md:p-8">
+        <div class="flex flex-col items-start justify-between gap-5 md:flex-row md:items-center">
+          <div>
+            <p class="section-kicker bg-[#ffffff26] text-white">Ready to scale</p>
+            <h3 class="mt-3 text-2xl font-bold">Need a growth roadmap you can execute this quarter?</h3>
+            <p class="mt-2 max-w-2xl text-[#d6def5]">Book a strategy workshop and we will map your channels, messaging, and budget into a practical 90-day execution plan.</p>
+          </div>
+          <a href="/contact" class="btn-primary">Get your proposal</a>
         </div>
-        <!-- <div class="hidden md:grid justify-items-center -m-20">
-            <img src="/services/Illustration.svg" width="50%" alt="cat"/>
-        </div> -->
+      </div>
     </div>
-</div>
-</Container>
+  </Container>
+</section>
