@@ -38,14 +38,30 @@ import Container from "./Container.astro";
           <div class="absolute -left-8 -top-8 h-28 w-28 rounded-full bg-[#48d8b14f] blur-2xl"></div>
           <div class="absolute -bottom-8 -right-8 h-28 w-28 rounded-full bg-[#ff6b2c4d] blur-2xl"></div>
           <div class="relative rounded-3xl border border-[#1f2d4a2e] bg-[#0f1b33] p-5 text-white shadow-2xl sm:p-8">
-            <img src="/logo.png" class="mx-auto h-20 w-auto sm:h-24" alt="DigitalSoup logo" />
+            <div class="relative overflow-hidden rounded-2xl border border-white/10 bg-[#101f3b] p-3">
+              <img src="/Hero.svg" class="h-40 w-full object-contain sm:h-48" alt="Digital marketing illustration" />
+              <div class="pointer-events-none absolute left-3 top-3 rounded-lg bg-white/10 px-2 py-1 text-[10px] font-semibold text-[#b8c9f4]">AI + Creative</div>
+              <div class="pointer-events-none absolute bottom-3 right-3 rounded-lg bg-white/10 px-2 py-1 text-[10px] font-semibold text-[#b8c9f4]">Full-funnel</div>
+            </div>
             <p class="mt-4 text-center text-base font-semibold sm:mt-6 sm:text-lg">A creative growth partner for ambitious businesses</p>
-            <div class="mt-4 space-y-3 text-sm text-[#d6def5] sm:mt-6">
+            <div class="mt-4 grid grid-cols-1 gap-2 text-sm text-[#d6def5] sm:mt-6">
               <p class="rounded-xl bg-white/10 px-4 py-3">Paid media + creative testing loops</p>
               <p class="rounded-xl bg-white/10 px-4 py-3">SEO + content systems built for conversion</p>
               <p class="rounded-xl bg-white/10 px-4 py-3">Weekly reporting focused on business outcomes</p>
             </div>
           </div>
+        </div>
+      </div>
+
+      <div class="mt-6 rounded-2xl border border-[#1f2d4a1e] bg-white/70 p-4 sm:mt-8">
+        <p class="mb-3 text-center text-xs font-semibold uppercase tracking-[0.08em] text-[#5b6b90]">Tools and platforms we work with</p>
+        <div class="grid grid-cols-3 gap-3 opacity-80 sm:grid-cols-6">
+          <img src="/clients/01.svg" class="mx-auto h-7 w-auto sm:h-8" alt="Client logo 1" />
+          <img src="/clients/02.svg" class="mx-auto h-7 w-auto sm:h-8" alt="Client logo 2" />
+          <img src="/clients/03.svg" class="mx-auto h-7 w-auto sm:h-8" alt="Client logo 3" />
+          <img src="/clients/04.svg" class="mx-auto h-7 w-auto sm:h-8" alt="Client logo 4" />
+          <img src="/clients/05.svg" class="mx-auto h-7 w-auto sm:h-8" alt="Client logo 5" />
+          <img src="/clients/06.svg" class="mx-auto h-7 w-auto sm:h-8" alt="Client logo 6" />
         </div>
       </div>
     </div>
