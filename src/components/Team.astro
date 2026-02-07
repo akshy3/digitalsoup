@@ -6,21 +6,21 @@ import teamData from "./Data/team.json";
 
 <section id="team" class="pt-8 md:pt-12">
   <Container>
-    <div class="section-shell p-8 md:p-10">
+    <div class="section-shell p-5 sm:p-7 md:p-10">
       <Topic
         title="The Team Behind the Results"
         description="A senior team that combines strategic depth, platform expertise, and relentless execution to move metrics that matter."
       />
 
-      <div class="grid grid-cols-1 gap-4 md:grid-cols-3">
+      <div class="grid grid-cols-1 gap-3 md:grid-cols-3 md:gap-4">
         {teamData.team.map(({ title, description, name, link, profile }) => (
-          <article class="rounded-2xl border border-[#1f2d4a24] bg-white/80 p-6">
+          <article class="rounded-2xl border border-[#1f2d4a24] bg-white/80 p-4 sm:p-6">
             <div class="flex items-start justify-between gap-2">
-              <div class="flex items-center gap-4">
-                <img src={profile} alt={name} class="h-14 w-14 rounded-xl border border-[#1f2d4a1f] object-cover" />
+              <div class="flex items-center gap-3 sm:gap-4">
+                <img src={profile} alt={name} class="h-12 w-12 rounded-xl border border-[#1f2d4a1f] object-cover sm:h-14 sm:w-14" />
                 <div>
                   <p class="text-xs font-semibold uppercase tracking-[0.08em] text-[#5a6b91]">{title}</p>
-                  <h3 class="text-lg font-bold text-[#111c34]">{name}</h3>
+                  <h3 class="text-base font-bold text-[#111c34] sm:text-lg">{name}</h3>
                 </div>
               </div>
               <a class="rounded-lg border border-[#1f2d4a1f] p-2 text-[#ff6b2c]" href={link} aria-label={`View ${name} profile`}>
@@ -31,7 +31,7 @@ import teamData from "./Data/team.json";
                 </svg>
               </a>
             </div>
-            <p class="mt-4 text-sm leading-relaxed text-[#4a5b80]">{description}</p>
+            <p class="mt-3 text-sm leading-relaxed text-[#4a5b80] sm:mt-4">{description}</p>
           </article>
         ))}
       </div>

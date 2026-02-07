@@ -78,7 +78,7 @@
   align-items: center;
   justify-content: center;
   border-radius: 0.95rem;
-  padding: 0.85rem 1.5rem;
+  padding: 0.92rem 1.5rem;
   font-weight: 700;
   color: #fff;
   background: linear-gradient(120deg, var(--brand), var(--brand-deep));
@@ -96,7 +96,7 @@
   align-items: center;
   justify-content: center;
   border-radius: 0.95rem;
-  padding: 0.85rem 1.5rem;
+  padding: 0.92rem 1.5rem;
   font-weight: 700;
   color: var(--ink-900);
   background: rgba(255, 255, 255, 0.7);
@@ -127,6 +127,25 @@
   to {
     opacity: 1;
     transform: translateY(0);
+  }
+}
+
+@media (max-width: 768px) {
+  .section-shell {
+    border-radius: 1.2rem;
+    box-shadow: 0 12px 28px rgba(17, 28, 52, 0.08);
+  }
+
+  .section-kicker {
+    font-size: 0.7rem;
+    letter-spacing: 0.07em;
+  }
+
+  .btn-primary,
+  .btn-secondary {
+    min-height: 46px;
+    padding: 0.85rem 1rem;
+    font-size: 0.95rem;
   }
 }
 

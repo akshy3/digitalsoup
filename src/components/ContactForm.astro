@@ -2,33 +2,33 @@
 import Topic from "./Topic.astro";
 ---
 
-<section class="section-shell p-8 md:p-10">
+<section class="section-shell p-5 sm:p-7 md:p-10">
   <Topic title="Contact" description="Tell us your growth goals and we will come back with a clear plan, channel mix, and expected milestones." />
 
-  <div class="mt-6 grid gap-6 md:grid-cols-[1.1fr_0.9fr]">
-    <form action="https://formspree.io/f/xyzwdgpz" method="POST" class="space-y-4 rounded-2xl border border-[#1f2d4a24] bg-white/80 p-6">
+  <div class="mt-6 grid gap-4 md:grid-cols-[1.1fr_0.9fr] md:gap-6">
+    <form action="https://formspree.io/f/xyzwdgpz" method="POST" class="space-y-4 rounded-2xl border border-[#1f2d4a24] bg-white/80 p-4 sm:p-6">
       <div class="grid gap-4 md:grid-cols-2">
         <div>
           <label for="name" class="mb-1 block text-sm font-semibold text-[#24355a]">Name</label>
-          <input name="name" type="text" id="name" class="w-full rounded-xl border border-[#1f2d4a2b] bg-white px-4 py-3 text-sm focus:border-[#ff6b2c] focus:outline-none" placeholder="Your name" required />
+          <input name="name" type="text" id="name" class="w-full rounded-xl border border-[#1f2d4a2b] bg-white px-4 py-3 text-base focus:border-[#ff6b2c] focus:outline-none" placeholder="Your name" required />
         </div>
         <div>
           <label for="email" class="mb-1 block text-sm font-semibold text-[#24355a]">Email</label>
-          <input name="email" type="email" id="email" class="w-full rounded-xl border border-[#1f2d4a2b] bg-white px-4 py-3 text-sm focus:border-[#ff6b2c] focus:outline-none" placeholder="you@company.com" required />
+          <input name="email" type="email" id="email" class="w-full rounded-xl border border-[#1f2d4a2b] bg-white px-4 py-3 text-base focus:border-[#ff6b2c] focus:outline-none" placeholder="you@company.com" required />
         </div>
       </div>
       <div>
         <label for="subject" class="mb-1 block text-sm font-semibold text-[#24355a]">Subject</label>
-        <input name="subject" type="text" id="subject" class="w-full rounded-xl border border-[#1f2d4a2b] bg-white px-4 py-3 text-sm focus:border-[#ff6b2c] focus:outline-none" placeholder="What do you need help with?" required />
+        <input name="subject" type="text" id="subject" class="w-full rounded-xl border border-[#1f2d4a2b] bg-white px-4 py-3 text-base focus:border-[#ff6b2c] focus:outline-none" placeholder="What do you need help with?" required />
       </div>
       <div>
         <label for="message" class="mb-1 block text-sm font-semibold text-[#24355a]">Message</label>
-        <textarea name="message" id="message" rows="6" class="w-full rounded-xl border border-[#1f2d4a2b] bg-white px-4 py-3 text-sm focus:border-[#ff6b2c] focus:outline-none" placeholder="Share your goals, budget, and timeline."></textarea>
+        <textarea name="message" id="message" rows="6" class="w-full rounded-xl border border-[#1f2d4a2b] bg-white px-4 py-3 text-base focus:border-[#ff6b2c] focus:outline-none" placeholder="Share your goals, budget, and timeline."></textarea>
       </div>
       <button type="submit" class="btn-primary w-full">Send message</button>
     </form>
 
-    <aside class="rounded-2xl border border-[#1f2d4a24] bg-[#0f1b33] p-6 text-white">
+    <aside class="rounded-2xl border border-[#1f2d4a24] bg-[#0f1b33] p-5 text-white sm:p-6">
       <p class="section-kicker bg-white/20 text-white">What happens next</p>
       <ol class="mt-4 space-y-3 text-sm text-[#d6def5]">
         <li>1. We review your brief and goals.</li>

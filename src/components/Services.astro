@@ -6,17 +6,17 @@ import servicesData from "./Data/services.json";
 
 <section id="services" class="pt-8 md:pt-12">
   <Container>
-    <div class="section-shell p-8 md:p-10">
+    <div class="section-shell p-5 sm:p-7 md:p-10">
       <Topic
         title="Services Built for Compounding Growth"
         description="Every engagement is assembled like a high-performance system: clear strategy, fast execution, and measurable outcomes across channels."
       />
 
-      <div class="grid grid-cols-1 gap-4 md:grid-cols-2">
+      <div class="grid grid-cols-1 gap-3 md:grid-cols-2 md:gap-4">
         {servicesData.map(({ name1, name2, image }) => (
-          <article class="group rounded-2xl border border-[#1f2d4a24] bg-white/80 p-6 transition hover:-translate-y-1 hover:border-[#1f2d4a4a]">
+          <article class="group rounded-2xl border border-[#1f2d4a24] bg-white/80 p-4 transition hover:-translate-y-1 hover:border-[#1f2d4a4a] sm:p-6">
             <div class="flex items-start justify-between gap-3">
-              <h3 class="text-2xl font-semibold text-[#111c34]">{name1} <span class="text-[#ff6b2c]">{name2}</span></h3>
+              <h3 class="text-xl font-semibold text-[#111c34] sm:text-2xl">{name1} <span class="text-[#ff6b2c]">{name2}</span></h3>
               <img class="h-12 w-12 rounded-xl border border-[#1f2d4a1f] bg-[#f4f7ff] p-2" src={image} alt={name1} />
             </div>
             <p class="mt-4 text-sm leading-relaxed text-[#485a82]">
@@ -26,14 +26,14 @@ import servicesData from "./Data/services.json";
         ))}
       </div>
 
-      <div class="mt-8 rounded-2xl border border-[#1f2d4a26] bg-[#0f1b33] p-7 text-white md:p-8">
+      <div class="mt-6 rounded-2xl border border-[#1f2d4a26] bg-[#0f1b33] p-5 text-white sm:p-7 md:mt-8 md:p-8">
         <div class="flex flex-col items-start justify-between gap-5 md:flex-row md:items-center">
           <div>
             <p class="section-kicker bg-[#ffffff26] text-white">Ready to scale</p>
-            <h3 class="mt-3 text-2xl font-bold">Need a growth roadmap you can execute this quarter?</h3>
+            <h3 class="mt-3 text-xl font-bold sm:text-2xl">Need a growth roadmap you can execute this quarter?</h3>
             <p class="mt-2 max-w-2xl text-[#d6def5]">Book a strategy workshop and we will map your channels, messaging, and budget into a practical 90-day execution plan.</p>
           </div>
-          <a href="/contact" class="btn-primary">Get your proposal</a>
+          <a href="/contact" class="btn-primary w-full sm:w-auto">Get your proposal</a>
         </div>
       </div>
     </div>
