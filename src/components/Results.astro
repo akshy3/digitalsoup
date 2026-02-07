@@ -2,21 +2,18 @@
 import Container from "./Container.astro";
 import Topic from "./Topic.astro";
 
-const wins = [
+const expectations = [
   {
-    metric: "+212%",
-    label: "Qualified organic traffic",
-    detail: "For a B2B SaaS brand after repositioning content and technical SEO foundations.",
+    label: "Transparent communication",
+    detail: "Clear weekly updates on what we worked on, what changed, and what we are testing next.",
   },
   {
-    metric: "3.4x",
-    label: "Paid social ROAS",
-    detail: "For a D2C brand through creative testing and audience segmentation sprints.",
+    label: "Structured execution",
+    detail: "A practical sprint plan across channels, with prioritized tasks instead of random marketing activity.",
   },
   {
-    metric: "-37%",
-    label: "Cost per lead",
-    detail: "For a local service business by rebuilding ad structure and landing page flow.",
+    label: "Long-term partnership mindset",
+    detail: "We optimize from fundamentals and iterate with you, rather than overselling short-term vanity outcomes.",
   },
 ];
 ---
@@ -25,20 +22,18 @@ const wins = [
   <Container>
     <div class="section-shell p-5 sm:p-7 md:p-10">
       <Topic
-        title="Recent Outcomes"
-        description="Representative examples of the kind of performance improvements we target."
+        title="What To Expect Working With Us"
+        description="We are a new agency, so we lead with honesty, consistency, and execution quality."
       />
 
       <div class="grid grid-cols-1 gap-3 md:grid-cols-3">
-        {wins.map((win) => (
+        {expectations.map((item) => (
           <article class="rounded-2xl border border-[#1f2d4a24] bg-white/85 p-5">
-            <p class="text-3xl font-extrabold text-[#ff6b2c]">{win.metric}</p>
-            <h3 class="mt-2 text-lg font-bold text-[#111c34]">{win.label}</h3>
-            <p class="mt-2 text-sm leading-relaxed text-[#4b5c82]">{win.detail}</p>
+            <h3 class="text-lg font-bold text-[#111c34]">{item.label}</h3>
+            <p class="mt-2 text-sm leading-relaxed text-[#4b5c82]">{item.detail}</p>
           </article>
         ))}
       </div>
     </div>
   </Container>
 </section>
-
